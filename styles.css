@@ -180,3 +180,47 @@ footer #nondisclaimer .social .fa-linkedin {
     background: #007bb5;
     color: white;
 }
+
+/* Activities */
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    background: #5a7a13;
+    color: white;
+    padding-top: 1em;
+    height: 40px;
+}
+
+thead {
+    background: lightblue
+}
+
+tbody {
+    background: #ecfab8;
+    text-align: center;
+}
+
+th,
+td {
+    height: 75px;
+    width: 225px;
+    vertical-align: middle;
+    border: solid 1px darkslategrey
+}
+
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977D1;
+    color: #fff;
+}
+
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
