@@ -311,3 +311,28 @@ form .button input[type="submit"] {
     cursor: pointer;
     margin-left: 400px;
 }
+
+/* Cliffs */
+
+.cliffs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 80px auto;
+    max-width: 1200px;
+}
+
+.cliff-banner {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cliff-image {
+    width: 100%;
+    display: block;
+}
