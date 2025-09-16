@@ -336,3 +336,17 @@ form .button input[type="submit"] {
     width: 100%;
     display: block;
 }
+
+/* Clock */
+#timeofday {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #3a3a3a;
+    background: linear-gradient(to top, rgba(251, 215, 139, 1) 0%, rgba(118, 213, 245, 1) 100%);
+    padding: 15px;
+}
+
+#clock {
+    color: #125688;
+}
