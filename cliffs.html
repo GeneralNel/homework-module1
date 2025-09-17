@@ -30,11 +30,16 @@
 			<h2>California's Greatest Cliffs</h2>
 
 			<p>
-				The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.
+				The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have
+				their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of
+				California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites,
+				wildlife watch spots and overnight cabins.
 			</p>
 
 			<p>
-				No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.
+				No matter which direction you head from Irvine, California, the sites are easily reached within a 100
+				mile radius. West Cliff is the most popular among Westcliff University campus students because of its
+				close proximity.
 			</p>
 
 			<div class="cliffs-grid">
@@ -105,6 +110,27 @@
 			</div>
 		</footer>
 	</div>
+	<script>
+		function addPartners() {
+			var photos = [];
+			var partnerList = [];
+			var image;
+			var openList = '<li class="partner">'; //Declare a variable to contain open list tag for partner images list
+			var closeList = '</li>'; //Declare a variable to contain close list tag for partners image list
+
+			var partnerNames = ["partner-bustour", "partner-cabinrental", "partner-campingadv", "partner-collegetours", "partner-rentalbike", "partner-tourgroup"];
+			//Create a loop to create 6 images starting with index of 0
+			for (var i = 0; i < 6; i++) {
+				photos.push("<img src='images/partners/" + partnerNames[i] + ".png'>"); //assemble image code
+				image = openList + photos[i] + closeList; //assemble image list code
+				partnerList.push(image); //Store(push) the assembled list code
+			}
+			//Display all partner images stored in the array
+			document.getElementById("partners").innerHTML = partnerList.join("");
+		}
+
+		addPartners();
+	</script>
 </body>
 
 </html>
