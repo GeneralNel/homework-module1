@@ -350,3 +350,18 @@ form .button input[type="submit"] {
 #clock {
     color: #125688;
 }
+
+/* Random Code */
+#codes {
+    color: black;
+    background-color: lightgrey;
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.randomcode {
+    margin-left: 180px; 
+}

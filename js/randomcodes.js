@@ -1,7 +1,7 @@
 // Function to generate combination of characters
 function generateCode() {
     // Create variables to store generated codes and the type of characters we want to show as codes
-    var code = ' '; // initialize to null value
+    var code = ''; // initialize to null value
     var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@$';
 
     // Generate character multiple times using a loop
@@ -20,5 +20,5 @@ function disableButton() {
     document.getElementById("submitBtn").disabled = true;
 }
 
-// active func
+// activate func
 disableButton();
