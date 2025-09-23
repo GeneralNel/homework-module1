@@ -58,3 +58,9 @@ function currentTime() {
     var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;
     document.getElementById("clock").innerText = time; //Display time
 }
+
+
+//Run time function every second via timer
+setInterval(currentTime, 1000);
+// initial run of time function
+currentTime();
