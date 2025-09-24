@@ -45,6 +45,9 @@ function evaluateCode() {
     if (charset1.length == charset2.length && charset1 == charset2) {
         disableButton(false); //if match, run the function to enable button
     }
+    else {
+        disableButton(true); //if not match, run the function to disable button
+    }
 }
 
 //listen to user input code
