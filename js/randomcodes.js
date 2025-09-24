@@ -27,5 +27,3 @@ function disableButton() {
     document.getElementById("submitBtn").disabled = true;
 }
 
-// activate func
-disableButton();
