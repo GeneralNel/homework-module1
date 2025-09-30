@@ -218,6 +218,10 @@ td {
     border: solid 1px darkslategrey
 }
 
+.selectedCell {
+    background-color: limegreen;
+}
+
 th:first-child {
     width: 125px;
     height: 50px;
