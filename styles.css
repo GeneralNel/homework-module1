@@ -99,58 +99,67 @@ section {
 }
 
 section #partners {
-    width: 1200px;
     padding: 2em 0 2em 0;
-    margin: 0 auto;
     text-align: center;
 }
 
 section #partners .partner {
     display: inline-block;
-    margin: 0 0.75em;
-    padding: 1.3em 1.5em;
+    margin: 0.5em auto;
+    padding: 1em 1.5em;
     background-color: #fff;
     border-radius: 50%;
+    max-width: 150px;
 }
 
 section #partners .partner img {
     width: 90px;
     height: 90px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Footer */
 footer {
     width: 100%;
-    height: 155px;
-    padding-bottom: 1em;
+    padding: 2em 0 1em 0;
     background-color: #ecfab8;
 }
 
 footer #nondisclaimer .copy {
-    padding: 3.5em 3.5em 3.5em 13em;
-    float: left;
+    padding: 1em 0;
     font-size: 0.9em;
+    text-align: center;
 }
 
 footer #nondisclaimer .social {
-    padding: 2.5em;
-    margin-right: 9.25em;
-    float: right;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Footer responsive adjustments */
+@media (min-width: 768px) {
+    footer #nondisclaimer .copy {
+        text-align: left;
+    }
+
+    footer #nondisclaimer .social {
+        text-align: right;
+    }
 }
 
 footer #disclaimer {
-    clear: both;
+    margin-top: 1em;
 }
 
 footer #disclaimer p {
     font-size: 0.8em;
     text-align: center;
+    margin: 0;
 }
 
 footer #nondisclaimer .social .fa {
     padding: 15px;
-    font-size: 20px;
-    width: 15px;
     text-align: center;
     text-decoration: none;
     margin: 0 5px;
@@ -458,17 +467,14 @@ form .button input[type="submit"] {
     }
 
     footer #nondisclaimer .copy {
-        padding: 3.5em 0em 3.5em 0em;
+        padding: 1em 0;
         text-align: center;
-        float: none;
         font-size: 0.9em;
     }
 
     footer #nondisclaimer .social {
-        padding: 2.5em 0;
-        margin: 0;
+        padding: 1em 0;
         text-align: center;
-        float: none;
     }
 }
 
