@@ -437,6 +437,26 @@ form .button input[type="submit"] {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .main-header {
+        padding: 0 1em;
+    }
+
+    .main-menu {
+        right: 0.25em;
+        min-width: 140px;
+        max-width: 160px;
+    }
+
+    .main-menu ul li {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+        font-size: 1rem;
+    }
+
     footer #nondisclaimer .copy {
         padding: 3.5em 0em 3.5em 0em;
         text-align: center;
@@ -500,27 +520,5 @@ form .button input[type="submit"] {
         padding: 25px;
         min-height: 450px;
         margin-top: 1em;
-    }
-}
-
-@media (max-width: 576px) {
-    .main-header {
-        padding: 0 1em;
-    }
-
-    .main-menu {
-        right: 0.25em;
-        min-width: 140px;
-        max-width: 160px;
-    }
-
-    .main-menu ul li {
-        padding: 8px 12px;
-        font-size: 13px;
-    }
-
-    .navbar-toggler {
-        padding: 0.25rem 0.5rem;
-        font-size: 1rem;
     }
 }
