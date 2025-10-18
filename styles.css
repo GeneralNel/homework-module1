@@ -9,18 +9,18 @@ header {
     background: no-repeat lightgrey url("images/cliff_ocean.jpg");
 }
 
-#activities header {
-    background-size: 1500px;
+#activities {
+    background-size: 100% 400px;
     background: no-repeat lightgrey url("images/runfly.jpg");
 }
 
-#contact header {
-    background-size: 1500px;
+#contact {
+    background-size: 100% 400px;
     background: no-repeat lightgrey url("images/cliff_rock.jpg");
 }
 
-#cliffs header {
-    background-size: 1500px;
+#cliffs {
+    background-size: 100% 400px;
     background: no-repeat lightgrey url("images/forest_cliff.jpg");
 }
 
@@ -434,39 +434,5 @@ form .button input[type="submit"] {
 }
 
 .navbar .navbar-nav .nav-link {
-  color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255)
 }
-
-/* Media Queries */
-/* @media (max-width: 768px) {
-    .main-header {
-        padding: 0 1em;
-    }
-
-    .main-menu {
-        right: 0.25em;
-        min-width: 140px;
-        max-width: 160px;
-    }
-
-    .main-menu ul li {
-        padding: 8px 12px;
-        font-size: 13px;
-    }
-
-    .navbar-toggler {
-        padding: 0.25rem 0.5rem;
-        font-size: 1rem;
-    }
-
-    footer #nondisclaimer .copy {
-        padding: 1em 0;
-        text-align: center;
-        font-size: 0.9em;
-    }
-
-    footer #nondisclaimer .social {
-        padding: 1em 0;
-        text-align: center;
-    }
-} */
