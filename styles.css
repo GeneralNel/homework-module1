@@ -5,23 +5,23 @@ header {
 }
 
 #home {
-    background-size: 100% 400px;
     background: no-repeat lightgrey url("images/cliff_ocean.jpg");
+    background-size: 100% 400px;
 }
 
 #activities {
-    background-size: 100% 400px;
     background: no-repeat lightgrey url("images/runfly.jpg");
+    background-size: 100% 400px;
 }
 
 #contact {
-    background-size: 100% 400px;
     background: no-repeat lightgrey url("images/cliff_rock.jpg");
+    background-size: 100% 400px;
 }
 
 #cliffs {
-    background-size: 100% 400px;
     background: no-repeat lightgrey url("images/forest_cliff.jpg");
+    background-size: 100% 400px;
 }
 
 .main-header {
