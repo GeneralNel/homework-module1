@@ -296,13 +296,7 @@ textarea {
     height: 150px;
 }
 
-form .button input[type="submit"] {
-    /* background-color: #4977D1; */
-    color: #fff;
-    padding: 8px 30px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
+#submitBtn {
     margin-left: 400px;
 }
 
@@ -352,7 +346,7 @@ form .button input[type="submit"] {
     background-color: lightgrey;
     height: 30px;
     line-height: 30px;
-    width: 80px;
+    width: 120px;
     display: inline-block;
     margin-left: 15px;
 }
