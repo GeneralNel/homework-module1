@@ -28,16 +28,11 @@ header {
     background-color: rgb(255, 255, 255, 0.8);
 }
 
-.main-header .logo img {
-    width: 100px;
-    height: 100px;
-    float: left;
-}
-
 /* Navigation */
 .main-menu {
-    margin-left: 180px;
     font-weight: 400;
+    height: 115px;
+    background-color: rgba(38, 41, 61, 0.7);
 }
 
 .main-menu ul li {
@@ -438,9 +433,12 @@ form .button input[type="submit"] {
     background-color: limegreen;
 }
 
+.navbar .navbar-nav .nav-link {
+  color: rgb(255, 255, 255)
+}
 
 /* Media Queries */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .main-header {
         padding: 0 1em;
     }
@@ -471,4 +469,4 @@ form .button input[type="submit"] {
         padding: 1em 0;
         text-align: center;
     }
-}
+} */
