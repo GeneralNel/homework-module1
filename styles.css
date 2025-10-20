@@ -9,6 +9,7 @@ header {
     background-size: 100% 400px;
 
 }
+
 #activities {
     background: no-repeat lightgrey url("images/runfly.jpg");
     background-size: 100% 400px;
@@ -25,99 +26,119 @@ header {
 }
 
 @media (max-width: 480px) {
-  header {
-    width: 100%;
-    min-height: 245px;
-  }
-  #home {
-    background-size: 100% 300px;
-  }
-  #cliffs {
-    background-size: 100% 300px;
-  }
-  #activities {
-    background-size: 100% 300px;
-  }
-  #contact {
-    background-size: 100% 300px;
-  }
+    header {
+        width: 100%;
+        min-height: 245px;
+    }
+
+    #home {
+        background-size: 100% 300px;
+    }
+
+    #cliffs {
+        background-size: 100% 300px;
+    }
+
+    #activities {
+        background-size: 100% 300px;
+    }
+
+    #contact {
+        background-size: 100% 300px;
+    }
 }
 
 
 @media (min-width: 576px) {
-  header {
-    width: 100%;
-    min-height: 275px;
-  }
-  #home {
-    background-size: 100% 400px;
-  }
-  #cliffs {
-    background-size: 100% 400px;
-  }
-  #activities {
-    background-size: 100% 400px;
-  }
-  #contact {
-    background-size: 100% 400px;
-  }
+    header {
+        width: 100%;
+        min-height: 275px;
+    }
+
+    #home {
+        background-size: 100% 400px;
+    }
+
+    #cliffs {
+        background-size: 100% 400px;
+    }
+
+    #activities {
+        background-size: 100% 400px;
+    }
+
+    #contact {
+        background-size: 100% 400px;
+    }
 }
 
 @media (min-width: 768px) {
-  header {
-    width: 100%;
-    min-height: 300px;
-  }
-  #home {
-    background-size: 100% 450px;
-  }
-  #cliffs {
-    background-size: 100% 450px;
-  }
-  #activities {
-    background-size: 100% 450px;
-  }
-  #contact {
-    background-size: 100% 450px;
-  }
+    header {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    #home {
+        background-size: 100% 450px;
+    }
+
+    #cliffs {
+        background-size: 100% 450px;
+    }
+
+    #activities {
+        background-size: 100% 450px;
+    }
+
+    #contact {
+        background-size: 100% 450px;
+    }
 }
 
 @media (min-width: 992px) {
-  header {
-    width: 100%;
-    min-height: 400px;
-  }
-  #home {
-    background-size: 100% 550px;
-  }
-  #cliffs {
-    background-size: 100% 550px;
-  }
-  #activities {
-    background-size: 100% 550px;
-  }
-  #contact {
-    background-size: 100% 550px;
-  }
+    header {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    #home {
+        background-size: 100% 550px;
+    }
+
+    #cliffs {
+        background-size: 100% 550px;
+    }
+
+    #activities {
+        background-size: 100% 550px;
+    }
+
+    #contact {
+        background-size: 100% 550px;
+    }
 }
 
 @media (min-width: 1200px) {
-  header {
-    width: 100%;
-    min-height: 500px;
-  }
-  #home {
-    background-size: 100% 700px;
-  }
-  #cliffs {
-    background-size: 100% 700px;
-  }
-  #activities {
-    background-size: 100% 700px;
-  }
-  #contact {
-    background-size: 100% 700px;
-  }
+    header {
+        width: 100%;
+        min-height: 500px;
+    }
+
+    #home {
+        background-size: 100% 700px;
+    }
+
+    #cliffs {
+        background-size: 100% 700px;
+    }
+
+    #activities {
+        background-size: 100% 700px;
+    }
+
+    #contact {
+        background-size: 100% 700px;
+    }
 }
 
 .main-header {
@@ -351,17 +372,6 @@ td:first-child {
     color: grey;
 }
 
-form {
-    font-size: 0.9em;
-    margin: 30px 50px;
-}
-
-fieldset {
-    border: 2px solid #9ed034;
-    padding: 20px;
-    width: 1000px;
-}
-
 legend {
     color: #4977D1;
     font-weight: bold;
@@ -378,19 +388,6 @@ fieldset label {
     display: block;
 }
 
-select {
-    text-align: center;
-    width: 150px;
-}
-
-.textbox input,
-textarea,
-.radios,
-.selectmenu {
-    width: 500px;
-    margin-bottom: 15px;
-}
-
 .textbox input {
     height: 20px;
 }
@@ -399,8 +396,35 @@ textarea {
     height: 150px;
 }
 
-#submitBtn {
-    margin-left: 400px;
+form {
+    font-size: 0.9em;
+    margin: 30px 15px;
+}
+
+fieldset {
+    border: 2px solid #9ed034;
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.textbox input,
+textarea,
+.radios,
+.selectmenu {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+select {
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+.randomcode {
+    margin-left: 0;
 }
 
 /* Cliffs */
@@ -452,10 +476,6 @@ textarea {
     width: 120px;
     display: inline-block;
     margin-left: 15px;
-}
-
-.randomcode {
-    margin-left: 180px;
 }
 
 /* lightbox  */
@@ -534,15 +554,25 @@ textarea {
     color: rgb(255, 255, 255);
 }
 
-/* Make table wrapper horizontal-only scrollable to avoid vertical scrollbar */
 .table-responsive {
     overflow-x: auto;
-    overflow-y: hidden; /* prevent vertical scrollbar */
+    overflow-y: hidden;
+    /* prevent vertical scrollbar */
     -webkit-overflow-scrolling: touch;
 }
 
-/* Prevent table cells from wrapping so horizontal scrolling is used when content overflows */
 .table-responsive table th,
 .table-responsive table td {
     white-space: nowrap;
+}
+
+
+@media (min-width: 768px) {
+    form {
+        margin: 30px 50px;
+    }
+
+    .randomcode {
+        margin-left: 180px;
+    }
 }
