@@ -6,21 +6,22 @@ $(document).ready(function () {
         if (content != "Not Available" && col != 0) { //check if content does not contain a particular string
             $(this).toggleClass("tdHighlight"); //add or remove class when cell is selected
 
+            var header = $("th").eq(col).text(); //get content of header cell based on index of selected cell
+            var fullText = content + " at " + header;
+
             if ($(this).hasClass("tdHighlight")) { //check if selected cell has class
-                var header = $("th").eq(col).text(); //get content of header cell based on index of selected cell
-                content = content + " at " + header; //add header content to selected cell content
-
-                $('#displaySelected').css("visibility", "visible"); //make display box visible
-                $('#displaySelected').css("margin-top", "2em"); //add spaces above display box
-                $('#result').append("<p>" + content + "</p>"); //add child element with contents of cell
-
+                // Append to modal result
+                $('#modalResult').append("<p class=\"modal-item\">" + fullText + "</p>");
             } else { //if selected cell don't have class
-                $('#result p:contains(' + content + ')').remove(); //remove child element
+                // Remove matching item from modal
+                $('#modalResult p:contains(' + content + ' at ' + header + ')').remove();
+            }
 
-                if ($('#result').has('p').length == false) { //check if there are any child elements within parent
-                    $('#displaySelected').css("visibility", "hidden"); //make display box hidden
-                    $('#displaySelected').css("margin-top", "0"); //remove spaces above display box
-                }
+            // If there are any selected items, show the modal; otherwise hide it
+            if ($('#modalResult').children().length > 0) {
+                $('#selectedModal').modal('show');
+            } else {
+                $('#selectedModal').modal('hide');
             }
         }
     });
@@ -31,5 +32,23 @@ $(document).ready(function () {
         if (content != "Not Available" && col != 0) { //check if content does not contain a particular string
             $(this).css("cursor", "pointer");
         }
+    });
+
+    $('#modalGetInfo').click(function () {
+        var items = [];
+        $('#modalResult .modal-item').each(function () {
+            items.push($(this).text());
+        });
+
+        if (items.length === 0) {
+            alert('Please select at least one activity.');
+            return;
+        }
+
+        alert('Sending info for :\n' + items.join('\n'));
+
+        $('.tdHighlight').removeClass('tdHighlight');
+        $('#modalResult').empty();
+        $('#selectedModal').modal('hide');
     });
 });

@@ -104,13 +104,25 @@
         </tbody>
   </table>
   </div>
-      <div id="displaySelected">
-        <div id="result">
-          <h4>My selected activities to enquire :</h4>
-        </div>
-        <div id="sendinfo">
-          <input type="email" placeholder="johndoe@gmail.com">
-          <button>Get Info</button>
+      <div class="modal fade" id="selectedModal" tabindex="-1" role="dialog" aria-labelledby="selectedModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="selectedModalLabel">My selected activities to enquire :</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="modalResult">
+                <!-- selected items will be appended here -->
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Back to Activities</button>
+              <button id="modalGetInfo" type="button" class="btn btn-primary">Get Info</button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
