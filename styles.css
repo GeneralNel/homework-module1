@@ -7,8 +7,8 @@ header {
 #home {
     background: no-repeat lightgrey url("images/cliff_ocean.jpg");
     background-size: 100% 400px;
-}
 
+}
 #activities {
     background: no-repeat lightgrey url("images/runfly.jpg");
     background-size: 100% 400px;
@@ -22,6 +22,102 @@ header {
 #cliffs {
     background: no-repeat lightgrey url("images/forest_cliff.jpg");
     background-size: 100% 400px;
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 100%;
+    min-height: 245px;
+  }
+  #home {
+    background-size: 100% 300px;
+  }
+  #cliffs {
+    background-size: 100% 300px;
+  }
+  #activities {
+    background-size: 100% 300px;
+  }
+  #contact {
+    background-size: 100% 300px;
+  }
+}
+
+
+@media (min-width: 576px) {
+  header {
+    width: 100%;
+    min-height: 275px;
+  }
+  #home {
+    background-size: 100% 400px;
+  }
+  #cliffs {
+    background-size: 100% 400px;
+  }
+  #activities {
+    background-size: 100% 400px;
+  }
+  #contact {
+    background-size: 100% 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    width: 100%;
+    min-height: 300px;
+  }
+  #home {
+    background-size: 100% 450px;
+  }
+  #cliffs {
+    background-size: 100% 450px;
+  }
+  #activities {
+    background-size: 100% 450px;
+  }
+  #contact {
+    background-size: 100% 450px;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    width: 100%;
+    min-height: 400px;
+  }
+  #home {
+    background-size: 100% 550px;
+  }
+  #cliffs {
+    background-size: 100% 550px;
+  }
+  #activities {
+    background-size: 100% 550px;
+  }
+  #contact {
+    background-size: 100% 550px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    min-height: 500px;
+  }
+  #home {
+    background-size: 100% 700px;
+  }
+  #cliffs {
+    background-size: 100% 700px;
+  }
+  #activities {
+    background-size: 100% 700px;
+  }
+  #contact {
+    background-size: 100% 700px;
+  }
 }
 
 .main-header {
